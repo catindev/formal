@@ -1,1 +1,1 @@
-![Logo](https://github.com/catindev/formal/raw/master/formal.png)
+[Logo](https://github.com/catindev/formal/raw/master/formal.png)

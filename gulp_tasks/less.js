@@ -9,6 +9,6 @@ gulp.task('build-less', function() {
     return  gulp.src([ 'src/styles/index.less' ])
     .pipe(less())
     .pipe(cssnano())
-    .pipe(rename('./elements.css'))
+    .pipe(rename('./formal.css'))
     .pipe(gulp.dest('build/'));
 });
