@@ -1,0 +1,73 @@
+/* Alerts */
+
+alert, .alert {
+	position: relative;
+	padding: @base-line / 2 @base-line;
+	padding-right: 32px;
+	line-height: @base-line;
+	font-size: 94%;
+	color: white;
+	display: block;
+	font-weight: normal;
+	border-radius: @global-radius;
+	margin-bottom: @base-line;
+	& h5 {
+		line-height: 1;
+	}
+	& a,
+	& h5 {
+		color: white;
+	}
+	& a:hover {
+		color: white;
+		text-decoration: none;
+	}
+	&.alert-primary {
+		&:hover {
+			box-shadow: 0 0 0 3px rgba(25, 115, 173, .12);
+		}
+		background-color: rgba(red(@color-primary), green(@color-primary), blue(@color-primary), .85);
+	}
+	&.alert-error {
+		&:hover {
+			box-shadow: 0 0 0 3px rgba(212, 0, 46, .12);
+		}
+		background-color: rgba(red(@color-error), green(@color-error), blue(@color-error), .85);
+	}
+	&.alert-warning {
+		color: black;
+		&:hover {
+			box-shadow: 0 0 0 3px rgba(250, 158, 71, .12);
+		}
+		& a,
+		& a:hover,
+		& h5 {
+			color: black;
+		}
+		background-color: rgba(red(@color-warning), green(@color-warning), blue(@color-warning), .83);
+	}
+	&.alert-success {
+		&:hover{
+			box-shadow: 0 0 0 3px rgba(8, 181, 138, .12);
+		}
+		background-color: rgba(red(@color-success), green(@color-success), blue(@color-success), .83);
+	}
+	& a {
+		font-weight: bold;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	& .close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: .5rem 1rem;
+		opacity: .6;
+		cursor: pointer;
+		content: '×';
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
