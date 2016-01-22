@@ -11,7 +11,7 @@ alert, .alert {
 	font-weight: normal;
 	border-radius: @global-radius;
 	margin-bottom: @base-line;
-	& h5 {
+	& h5, & p {
 		line-height: 1;
 	}
 	& a,
@@ -62,10 +62,13 @@ alert, .alert {
 		position: absolute;
 		top: 0;
 		right: 0;
-		padding: .5rem 1rem;
-		opacity: .6;
+		padding: .5rem 1.5rem;
+		opacity: .8;
 		cursor: pointer;
-		content: '×';
+		font-weight: bold;
+		&:after {
+		  content: '×';
+		}
 		&:hover {
 			opacity: 1;
 		}
