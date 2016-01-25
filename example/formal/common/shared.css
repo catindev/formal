@@ -1,0 +1,18 @@
+@value radius: 0.3em;
+
+.font {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.fontCode {
+	font-family: Menlo, Monaco, Consolas, Courier, monospace;
+}
+
+.borderRadius {
+	border-radius: 0.3em;
+}
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}

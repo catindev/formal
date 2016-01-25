@@ -1,0 +1,27 @@
+/* Buttons group */
+
+@value shared: "../common/shared.css";
+@value radius: radius from shared;
+@value clearfix: clearfix from shared;
+
+.buttons {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.buttons:after {
+	composes: clearfix;
+}
+
+.grouped {
+	float: left;
+	margin-left: -1px;
+	border-radius: 0;
+}
+
+.grouped:first-child {
+	border-radius: radius 0 0 radius;
+}
+.grouped:last-child {
+	border-radius: 0 radius radius 0;
+}
