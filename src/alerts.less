@@ -1,3 +1,6 @@
+@import "mixins.less";
+@import "variables.less";
+
 /* Alerts */
 
 alert, .alert {
@@ -59,15 +62,14 @@ alert, .alert {
 		}
 	}
 	& .close {
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: .5rem 1.5rem;
+		display: block;
+    position: absolute;
+    top: .7rem;
+    right: 1.2rem;
+    cursor: pointer;
 		opacity: .8;
-		cursor: pointer;
-		font-weight: bold;
 		&:after {
-		  content: '×';
+		  content: '✖';
 		}
 		&:hover {
 			opacity: 1;

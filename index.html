@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="build/formal.css" />
+    <link rel="stylesheet" href="build/formal.min.css" />
     <style media="screen">
         body {
             background:#fdfdfd;
@@ -27,6 +27,11 @@
             margin-bottom: 3rem;
         }
 
+
+        .top-container {
+            padding: 1rem; margin: 0 7rem;
+        }
+
         .container {
             border-radius: 0.3em;
             background-color: white;
@@ -40,26 +45,34 @@
             display: block;
         }
 
-        .top-container {
-            padding: 1rem; margin: 0 7rem;
-        }
-
         .box {
             padding: 1rem 0;
-            margin: .5rem 0;
+            margin: 1rem 0;
+            margin-bottom: 2rem;
         }
+
+
     </style>
 </head>
 <body>
+
     <div class="top-container">
         <page-title>Formal</page-title>
         <subtitle>
-            A set of styles & widgets for bulding business interfaces
+            A set of pure CSS stylesheets for bulding forms
         </subtitle>
     </div>
 
     <div class="top-container">
         <h2>Typography</h2>
+    </div>
+
+    <div class="top-container">
+        <ul class="breadcrumb breadcrumb-arrow">
+            <li><a href="#">path</a></li>
+            <li><a href="#">to</a></li>
+            <li><span>module</span></li>
+        </ul>
     </div>
 
     <div class="container">
@@ -130,6 +143,22 @@
             <div class="group">
                 <button type="default" class="left">Button Left</button>
                 <button type="primary" class="right">Button Right</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Width</h3>
+            <hr>
+            <div class="text-centered">
+                <p>
+                    <button type="default" class="width-12">12 columns</button>
+                </p>
+                <p>
+                    <button type="default" class="width-6">6 columns</button>
+                </p>
+                <p>
+                    <button type="default" class="width-4">4 columns</button>
+                </p>
             </div>
         </div>
     </div>
@@ -247,6 +276,7 @@
             </alert>
             <alert class="alert-error">
                 Sympathizing would fix Quaker objectives. Five big quacking <a href="#">zephyrs</a> jolt my wax bed.
+                <span class="close"></span>
             </alert>
             <alert class="alert-warning">
                 Brick quiz whangs jumpy veldt fox!
@@ -255,11 +285,9 @@
             </alert>
             <alert class="alert-success">
                 <h5>Title! Wow!</h5>
-                <p>
-                    The quick brown fox jumps over the lazy dog.
-                    Mix Zapf with Veljovic and get quirky Beziers.
-                    Dumpy kibitzer jingles as exchequer overflows.
-                </p>
+                The quick brown fox jumps over the lazy dog.
+                Mix Zapf with Veljovic and get quirky Beziers.
+                Dumpy kibitzer jingles as exchequer overflows.
                 <span class="close"></span>
             </alert>
         </div>

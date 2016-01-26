@@ -1,5 +1,8 @@
-/* =Breadcrumbs
------------------------------------------------------------------------------*/
+@import "mixins.less";
+@import "variables.less";
+
+/* Breadcrumbs */
+
 .breadcrumb {
 
 	margin: 0;
@@ -35,6 +38,12 @@
 	    content: " / ";
 	    top: -4px;
 	}
+	&.breadcrumb-arrow a:before {
+			content: " → ";
+			top: -4px;
+			right: -4px;
+	}
+
 
 	& span,
 	& a.active:hover {
@@ -44,4 +53,3 @@
 	}
 
 }
-

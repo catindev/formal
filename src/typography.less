@@ -1,5 +1,8 @@
-/* =Typography
------------------------------------------------------------------------------*/
+@import "mixins.less";
+@import "variables.less";
+
+/* Typography */
+
 html {
 	font-size: 62.5%;
 }
@@ -11,8 +14,7 @@ body {
 	color: @color-body;
 }
 
-/* =Links
------------------------------------------------------------------------------*/
+/* Links */
 a {
 	color: @color-link;
 	&:hover {
@@ -22,8 +24,7 @@ a {
 }
 
 
-/* =Headings
------------------------------------------------------------------------------*/
+/* Headings */
 .title,
 h1,
 h2,
@@ -103,8 +104,8 @@ address {
 	}
 }
 
-/* =Line height and margin
------------------------------------------------------------------------------*/
+/* Line height and margin */
+
 ul,
 ol,
 ul ul,
@@ -134,16 +135,16 @@ output {
 	margin-bottom: @margin-half;
 }
 
-/* =Lead
------------------------------------------------------------------------------*/
+/* Lead */
+
 .lead {
 	font-size: @font-size-big;
 	line-height: @base-line-big;
 }
 
 
-/* =Quote
------------------------------------------------------------------------------*/
+/* Quote */
+
 blockquote {
 	font-style: italic;
 	font-size: @font-size-big;
@@ -158,14 +159,14 @@ blockquote {
 }
 
 
-/* =Address
------------------------------------------------------------------------------*/
+/* Address */
+
 address {
 	font-style: normal;
 }
 
-/* =Definition list
------------------------------------------------------------------------------*/
+/* Definition list */
+
 dl dt {
 	font-weight: bold;
 }
@@ -173,8 +174,8 @@ dd {
 	margin-left: @base-line;
 }
 
-/* =Text-level
------------------------------------------------------------------------------*/
+/* Text-level */
+
 cite {
 	color: rgba(0, 0, 0, .5);
 	font-style: italic;
@@ -235,8 +236,8 @@ time {
 	font-size: @font-size-smaller;
 }
 
-/* =Code
------------------------------------------------------------------------------*/
+/* Code */
+
 pre,
 code,
 kbd,
