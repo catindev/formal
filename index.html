@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formal v0.1.0</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="build/demo.css" />
+    <link rel="stylesheet" href="build/formal.min.css" />
+</head>
+<body>
+
+    <div class="top-container">
+        <page-title>Formal</page-title>
+        <subtitle>
+            A set of pure CSS stylesheets for bulding forms
+        </subtitle>
+    </div>
+
+    <div class="top-container">
+        <h2>Typography</h2>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h1>How to Pitch a Project</h1>
+            <p class="lead">
+                Q: My partner and I just started our own firm and we’re pitching our first big project in a few days. Do you have any tips?
+            </p>
+            <p>
+                Yes I do. <mark>I rock pitches</mark>. Everyone who <i>pitches work</i> should think they rock pitches. Otherwise, you’re gonna make some weak-ass pitches. And no one wants to sit through those. Including your prospective client.
+            </p>
+            <p class="big">...</p>
+            <blockquote>
+                <p>
+                    No one wants an ER doctor who spends an hour showing you examples of their past work.
+                </p>
+                <cite>Mike Monteiro</cite>
+            </blockquote>
+            <p>
+                <em>“But Mike, they told us to bring examples of other projects!”</em> That’s <strong>right</strong>. Because they’re looking for their new <del>landing page</del> website in your portfolio. So go ahead and show them a couple of recent projects but tie them to problems they have. For example “Here’s <abbr title="Just for example">Acme Novelty</abbr>. Acme had a workflow issue very similar to the one you described. Here’s how we fixed it for them…” They’ll feel their pain point melting away.
+            </p>
+        </div>
+    </div>
+
+    <div class="top-container">
+        <h2>Buttons</h2>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h3>States</h3>
+            <hr>
+            <button type="default">Default</button>
+            <button type="default" toggle="on">toggle="on"</button>
+            <Button type="default" disabled>disabled</Button>
+        </div>
+
+        <div class="box">
+            <h3>Sizes</h3>
+            <hr>
+            <Button type="default">default</Button>
+            <Button type="default" big>big</Button>
+            <Button type="default" small>small</Button>
+        </div>
+
+        <div class="box">
+            <h3>Types</h3>
+            <hr>
+            <Button type="default">default</Button>
+            <Button type="primary">primary</Button>
+            <Button type="success">success</Button>
+            <Button type="danger">danger</Button>
+        </div>
+
+        <div class="box">
+            <h3>Buttons group</h3>
+            <hr>
+            <buttons>
+                <button type="default">Button</button>
+                <button type="default" disabled>Button</button>
+                <button type="default">Button</button>
+            </buttons>
+        </div>
+
+        <div class="box">
+            <h3>Panel group</h3>
+            <hr>
+            <div class="group">
+                <button type="default" class="left">Button Left</button>
+                <button type="primary" class="right">Button Right</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Width</h3>
+            <hr>
+            <p class="light">
+                <code>helpers</code> required.
+            </p>
+            <div class="text-centered">
+                <p>
+                    <button type="default" class="width-12">12 columns</button>
+                </p>
+                <p>
+                    <button type="default" class="width-6">6 columns</button>
+                </p>
+                <p>
+                    <button type="default" class="width-4">4 columns</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-container">
+        <h2>Forms</h2>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <form class="forms">
+                <section>
+                    <label>Email</label>
+                    <input type="email" name="email" class="width-6" />
+                </section>
+                <section>
+                    <label>Password</label>
+                    <input type="password" name="password" />
+                </section>
+                <section>
+                    <select class="select">
+                        <option value="">Choose me</option>
+                    </select>
+                </section>
+                <section>
+                    <label class="checkbox"><input type="checkbox"> Check me</label>
+                </section>
+                <section>
+                    <label class="checkbox"><input type="radio"> Radio me</label>
+                </section>
+                <section>
+                    <button type="default">Cancel</button>
+                    <button type="primary">Sign in</button>
+                </section>
+            </form>
+        </div>
+
+        <div class="box">
+            <form class="forms">
+                <row>
+                    <column cols="6">
+                        <input type="email" placeholder="Email">
+                    </column>
+                    <column cols="6">
+                        <input type="text" disabled="true" value="Disabled">
+                    </column>
+                </row>
+            </form>
+        </div>
+
+        <div class="box">
+            <form class="forms">
+                <row>
+                    <column cols="6">
+                        <label>Label <span class="req">*</span></label>
+                        <input type="text">
+                    </column>
+                    <column cols="6">
+                        <label>Label <span class="desc">Description</span></label>
+                        <input type="text">
+                        <div class="desc">Description</div>
+                    </column>
+                </row>
+            </form>
+        </div>
+
+        <div class="box">
+            <form class="forms">
+                <row>
+                    <column cols="6">
+                        <label>Label <span class="success">Everything is done correctly</span></label>
+                        <input type="text" class="input-success">
+                    </column>
+                    <column cols="6">
+                        <label>Label <span class="error">Please enter your name</span></label>
+                        <input type="text" class="input-error">
+                    </column>
+                </row>
+            </form>
+        </div>
+
+        <div class="box">
+            <form class="forms">
+                <row>
+                    <column cols="6">
+                        <label>How much is it?</label>
+                        <div class="input-prepend">
+                            <span>$</span>
+                            <input type="text" value="" />
+                        </div>
+                    </column>
+                    <column cols="6">
+                        <label>Or may be append?</label>
+                        <div class="input-append">
+                            <input type="text"><span>$</span>
+                        </div>
+                    </column>
+                </row>
+                <section>
+                    <label>Message</label>
+                    <textarea rows="6"></textarea>
+                </section>
+            </form>
+        </div>
+    </div>
+
+    <div class="top-container">
+        <h2>Notifications</h2>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <alert class="alert-primary">
+                Mr. Jock, TV quiz Ph.D., bags few lynx. Pack my box with <a href="#">five dozen</a> liquor jugs.
+            </alert>
+            <alert class="alert-error">
+                Sympathizing would fix Quaker objectives. Five big quacking <a href="#">zephyrs</a> jolt my wax bed.
+                <span class="close"></span>
+            </alert>
+            <alert class="alert-warning">
+                Brick quiz whangs jumpy veldt fox!
+                Quick wafting zephyrs vex <a href="#">bold Jim</a>.
+                Sphinx of black quartz judge my vow!.
+            </alert>
+            <alert class="alert-success">
+                <h5>Title! Wow!</h5>
+                The quick brown fox jumps over the lazy dog.
+                Mix Zapf with Veljovic and get quirky Beziers.
+                Dumpy kibitzer jingles as exchequer overflows.
+                <span class="close"></span>
+            </alert>
+        </div>
+
+    </div>
+
+</body>
+</html>

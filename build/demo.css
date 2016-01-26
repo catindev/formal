@@ -1,0 +1,42 @@
+body {
+		background:#fdfdfd;
+		padding-top:3rem;
+}
+
+page-title {
+		font-size: 7rem;
+		line-height:1.2;
+		font-weight: bold;
+		display: block;
+}
+
+subtitle {
+		font-size:2rem;
+		line-height:1;
+		display: block;
+		margin-bottom: 3rem;
+}
+
+
+.top-container {
+		padding: 1rem; margin: 0 7rem;
+}
+
+.container {
+		border-radius: 0.3em;
+		background-color: white;
+		border: 1px solid #dedede;
+		padding: 3rem; margin: 0 7rem;
+		margin-bottom: 3rem;
+}
+
+.container .message {
+		position: static;
+		display: block;
+}
+
+.box {
+		padding: 1rem 0;
+		margin: 1rem 0;
+		margin-bottom: 2rem;
+}
