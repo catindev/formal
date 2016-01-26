@@ -15,7 +15,7 @@ gulp.task('bundle', function() {
 		cascade: false
 	}))
     .pipe(rename('./formal.min.css'))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('./'));
 });
 
 // standalone modules
